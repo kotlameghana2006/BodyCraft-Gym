@@ -111,7 +111,6 @@ nav {
   padding-bottom: 0.75rem;
   color: var(--white);
 }
-
 .link a::after {
   content: "";
   position: absolute;
@@ -125,6 +124,11 @@ nav {
 
 .link a:hover::after {
   width: 50%;
+}
+.link a:visited,
+.link a:focus,
+.link a:active{
+  color: var(--white);
 }
 
 .header__container {
@@ -764,4 +768,76 @@ contact-us
   .footer__bar {
     text-align: center;
   }
+}
+/* pricing plan */
+
+.price_container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section_header {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e5001;
+  margin-bottom: 10px;
+}
+
+.section_subheader {
+  text-align: center;
+  font-size: 16px;
+  color: #55555500;
+  margin-bottom: 40px;
+}
+
+.price_grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.price_card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.price_card:hover {
+  transform: translateY(-5px);
+  background-color: #e3f2fd03;
+}
+
+.price_card h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #007bff00;
+}
+
+.price_card p {
+  font-size: 14px;
+  color: #33333303;
+  margin: 6px 0;
+}
+
+.btn.price_btn {
+  background-color: #007bff00;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.price_btn:hover {
+  background-color: #0057b304;
+}
+html{
+  scroll-behavior: smooth;
 }
